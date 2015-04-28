@@ -39,11 +39,9 @@ body{
 }
 
 .main{
-	height: 580px;
-	background: blue;
+	height: 500px;
 	background-image: url("images/mainPicture.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
 	/*background-position: 0px -100px;*/
 	/*background-size: 100% 100%;*/
 }
@@ -52,3 +50,63 @@ body{
 	margin: 0 10%;
 }
 
+.login{
+	height: 300px;
+	width: 250px;
+	background-color: white;
+	color: black;
+	float: right;
+	margin-right: 10%;
+	margin-top: 8%;
+}
+
+.sign_up{
+	height: 40px;
+	border: 0px solid black;
+	width: 125px;
+	float: left;
+	text-align: center;
+	padding-top: 15px;
+	font-size: 20px;
+}
+
+.login_text{
+	height: 40px;
+	border: 0px solid black;
+	width: 125px;
+	float: right;
+	text-align: center;
+	padding-top: 15px;
+	background-color: #acacac;
+	font-size: 20px;
+}
+
+.form{
+	text-align: center;
+	padding: 5px;
+}
+
+.main .form .title{
+	color: yellow;
+	border: 0px solid black;
+	clear: both;
+	padding-top: 20px;
+	font-size: 25px;
+	color: #99cc33;
+	margin-bottom: 20px;
+}
+
+input[type="text"]{
+	height: 30px;
+	padding: 3px;
+	margin-bottom: 10px;
+	width: 216px;
+}
+
+.login_button{
+	color: black;
+	background-color: #99cc33;
+	border: 1px solid grey;
+	width: 216px;
+	padding: 10px;
+}
