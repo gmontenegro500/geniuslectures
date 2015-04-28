@@ -1,0 +1,53 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.header .top{
+	border: 1px solid #333333;
+	height: 30px;
+	background-color: #333333;
+}
+
+.header .center{
+	border: 1px solid #99cc33;
+	height: 3px;
+	background-color: #99cc33;
+}
+
+.header .bottom{
+	border: 1px solid #cccccc;
+	height: 30px;
+	background-color: #cccccc;
+}
+
+.header .bottom .site{
+	color: white;
+	float: left;
+	margin-left: 15%;
+	font-size: 19px;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin-top: 2px;
+}
+
+.header .bottom .menu{
+	color: white;
+	float: right;
+	margin-right: 15%;
+	font-size: 19px;
+	margin-top: 2px;
+}
+
+.main{
+	height: 580px;
+	background: blue;
+	background-image: url("images/mainPicture.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-position: 0px -100px;*/
+	/*background-size: 100% 100%;*/
+}
+
+.box{
+	margin: 0 10%;
+}
