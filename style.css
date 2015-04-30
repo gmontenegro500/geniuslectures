@@ -98,6 +98,10 @@ body{
 	
 }
 
+.main table td{
+	border: 0px solid black;
+}
+
 input[type="text"]{
 	height: 30px;
 	padding: 3px;
@@ -114,18 +118,21 @@ input[type="text"]{
 	margin-bottom: 10px;
 }
 
-input[type="checkbox"] {
+.main input[type="checkbox"] {
 	margin-left: 10px;
-	float: left;
-
 }
-	input[type="checkbox"] + label {
-		font-size: 12px;
-		text-align: left;
-		
-		}
+
+.main label {
+	font-size: 12px;
+	text-align: left;
+}
 .box{
 	margin: 0 10%;
+}
+
+.footer-content{
+	height: 100px;
+	color: white;
 }
 
 /* ===== first block ===== */
@@ -135,24 +142,23 @@ input[type="checkbox"] {
 	padding: 40px 0;
 	border-bottom: 1px solid black;
 }
-	.description{
-		text-align: justify;
-		padding-top: 40px;
-		width: 40%;
-		float: left;
-		border: 0px solid black;
+.description{
+	text-align: justify;
+	padding-top: 40px;
+	width: 40%;
+	float: left;
+	border: 0px solid black;
+}
 
-	}
-
-	.laptop{
-		width: 50%;
-		height: 250px;
-		border: 0px solid black;
-		float: right;
-		background-image: url("images/laptop.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
+.laptop{
+	width: 50%;
+	height: 250px;
+	border: 0px solid black;
+	float: right;
+	/*background-image: url("images/laptop.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}
 /* ===== second block ===== */
 
 .second-block{
@@ -160,50 +166,53 @@ input[type="checkbox"] {
 	padding: 40px 0;
 }
 
-	.graduate{
-		width: 50%;
-		height: 250px;
-		border: 0px solid black;
-		float: left;
-		background-image: url("images/graduate.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
+.graduate{
+	width: 50%;
+	height: 250px;
+	border: 0px solid black;
+	float: left;
+	background-image: url("images/graduate.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
-	.description2{
-		text-align: justify;
-		padding-top: 40px;
-		width: 40%;
-		float: right;
-		border: 0px solid black;
+.description2{
+	text-align: justify;
+	padding-top: 40px;
+	width: 40%;
+	float: right;
+	border: 0px solid black;
 
-	}
+}
 
 /* ===== footer ===== */
 
 footer{
 	height: 270px;
-	padding-top: 20px;
 	background-color: #333333;
 
 }
-	.faq{
-		float: left;
-		width: 25%;
-	}
-	.main-menu{
-		float: left;
-		width: 25%;
-	}
-	.contact-us{
-		float: left;
-		width: 25%;
-	}
-	.conect{
-		float: left;
-		width: 25%;
-	}
-	.privacy{
-		height: 50px;
-		background-color: #959595;
-	}
+.privacy{
+	height: 200px;
+	background-color: #959595;
+}
+
+.footer_menu ul{
+	position: relative;
+	color: white;
+	list-style: none;
+	width: 725px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer_menu ul li{
+	float: left;
+	margin: 30px 30px 30px 30px;
+	font-size: 27px;
+}
+
+.footer_menu ul li a{
+	color: white;
+	text-decoration: none;
+}
