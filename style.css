@@ -3,6 +3,8 @@ body{
 	margin: 0;
 }
 
+ /* =============  header ========== */
+
 .header .top{
 	border: 1px solid #333333;
 	height: 30px;
@@ -24,7 +26,7 @@ body{
 .header .bottom .site{
 	color: white;
 	float: left;
-	margin-left: 15%;
+	margin-left: 10%;
 	font-size: 19px;
 	font-family: 'Roboto Condensed', sans-serif;
 	margin-top: 2px;
@@ -33,25 +35,26 @@ body{
 .header .bottom .menu{
 	color: white;
 	float: right;
-	margin-right: 15%;
+	margin-right: 10%;
 	font-size: 19px;
 	margin-top: 2px;
 }
+
+ /* =============  baner picture ========== */
 
 .main{
 	height: 500px;
 	background-image: url("images/mainPicture.jpg");
 	background-repeat: no-repeat;
 	/*background-position: 0px -100px;*/
-	/*background-size: 100% 100%;*/
+	background-size: cover;
 }
 
-.box{
-	margin: 0 10%;
-}
+
+ /* =============  sing up box ========== */
 
 .login{
-	height: 300px;
+	height: 325px;
 	width: 250px;
 	background-color: white;
 	color: black;
@@ -87,13 +90,12 @@ body{
 }
 
 .main .form .title{
-	color: yellow;
 	border: 0px solid black;
 	clear: both;
-	padding-top: 20px;
+	padding: 20px 0;
 	font-size: 25px;
 	color: #99cc33;
-	margin-bottom: 20px;
+	
 }
 
 input[type="text"]{
@@ -109,4 +111,87 @@ input[type="text"]{
 	border: 1px solid grey;
 	width: 216px;
 	padding: 10px;
+	margin-bottom: 10px;
 }
+
+input[type="checkbox"] {
+	margin-left: 10px;
+	float: left;
+
+}
+	input[type="checkbox"] + label {
+		font-size: 12px;
+		text-align: left;
+		
+		}
+.box{
+	margin: 0 10%;
+}
+
+/* ===== first block ===== */
+
+.first-block{
+	height: 300px;
+	padding: 40px 0;
+	border-bottom: 1px solid black;
+}
+	.description{
+		text-align: justify;
+		padding-top: 40px;
+		width: 40%;
+		float: left;
+		border: 0px solid black;
+
+	}
+
+	.laptop{
+		width: 50%;
+		height: 250px;
+		border: 0px solid black;
+		float: right;
+		background-image: url("images/laptop.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+/* ===== second block ===== */
+
+.second-block{
+	height: 300px;
+	padding: 40px 0;
+}
+
+	.graduate{
+		width: 50%;
+		height: 250px;
+		border: 0px solid black;
+		float: left;
+		background-image: url("images/graduate.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.description2{
+		text-align: justify;
+		padding-top: 40px;
+		width: 40%;
+		float: right;
+		border: 0px solid black;
+
+	}
+
+/* ===== footer ===== */
+
+footer{
+	height: 270px;
+	padding-top: 20px;
+	background-color: #333333;
+
+}
+	.footer-content{
+		
+	}
+
+	.privacy{
+		height: 50px;
+		background-color: #959595;
+	}
