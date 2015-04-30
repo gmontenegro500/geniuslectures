@@ -187,10 +187,22 @@ footer{
 	background-color: #333333;
 
 }
-	.footer-content{
-		
+	.faq{
+		float: left;
+		width: 25%;
 	}
-
+	.main-menu{
+		float: left;
+		width: 25%;
+	}
+	.contact-us{
+		float: left;
+		width: 25%;
+	}
+	.conect{
+		float: left;
+		width: 25%;
+	}
 	.privacy{
 		height: 50px;
 		background-color: #959595;
