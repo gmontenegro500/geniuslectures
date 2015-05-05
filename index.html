@@ -4,6 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-2.1.4.min.js"></script>
 </head>
 
 <body>
@@ -19,8 +20,8 @@
 				<a href="#">geniuslectures.com</a>
 			</div>
 			<div class = "menu">
-				<a href="#">&nbsp Courses &nbsp</a>
-				<a href="#">&nbspSupport &nbsp</a>
+				<a href="#"> Courses </a>
+				<a href="#"> Support </a>
 			</div>
 		</div>
 	</div>
@@ -113,24 +114,39 @@
 			<div class="footer_menu box">			
 				<ul>
 					<li>
-						 <a href="pages/faq.html">FAQ</a>
-						 <div class="questions">
-							 <ul>
-							 	<li>question1</li>
-							 	<li>question2</li>
-							 	<li>question3</li>
-							 	<li>question4</li>
-							 </ul>
-						 </div>
+						 <a href="pages/faq.html">FAQ</a>	<!-- titulo de la segunda lista/ primer elemento de la primera lista -->	
+						 <ul>
+							<li>question1</li>
+							<li>question2</li>
+							<li>question3</li>
+							<li>question4</li>
+						 </ul>
 					</li>
 					<li>
-						 <a href="faq.html">Main Menu</a>
+						 <a href="faq.html">Main Menu</a> 
+						 <ul>
+							<p>
+								hola soy german hola soy germanhola soy germanhola soy germanhola soy germanhola soy germanhola soy germanhola soy germanhola soy germanhola
+							</p>
+						 </ul>
 					</li>
 					<li>
 						 <a href="faq.html">Contact Us</a>
+						 <ul>
+							<li>question1</li>
+							<li>question2</li>
+							<li>question3</li>
+							<li>question4</li>
+						 </ul>
 					</li>
 					<li>
 						 <a href="faq.html">Connect with Us</a>
+						 <ul>
+							<li>question1</li>
+							<li>question2</li>
+							<li>question3</li>
+							<li>question4</li>
+						 </ul>
 					</li>
 				</ul>			
 			</div>
@@ -161,3 +177,17 @@
 
 </body>
 </html>
+
+<script>
+
+$('.laptop').click(function(){
+	prueba();
+});
+
+function prueba(){
+
+	$('.description p').css( "color", "red" );
+	
+}
+
+</script>

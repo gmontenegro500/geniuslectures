@@ -64,6 +64,7 @@ a{
 
 .menu a{
 	border-right: 1px solid white;
+	padding: 0 10 0 10px;
 }
 .menu a:hover{
 	background-color: white;
@@ -291,6 +292,27 @@ footer{
 	color: white;
 	text-decoration: none;
 }
+
+.footer_menu ul ul{
+	position: absolute;
+	top: 100px;
+	width: 100px;
+}
+
+.footer_menu ul ul li{
+	float: none;
+	font-size: 15px;
+	padding-right: 18%;
+	margin-top: 8px;
+}
+
+.footer_menu ul ul p{
+	font-size: 13px;
+	width: 170px;
+	line-height: 20px;
+	text-align: justify;
+}
+
 .questions{
 	width: 50px;
 	height: 40px;
@@ -315,6 +337,8 @@ footer{
 .tc{
 	color: white;
 	float:right;
+	position: relative;
+	top: -5px;
 }
 
 .tc ul{
