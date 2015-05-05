@@ -28,6 +28,7 @@ a{
 	border: 1px solid #cccccc;
 	height: 30px;
 	background-color: #cccccc;
+
 }
 
 .header .bottom .site{
@@ -53,12 +54,24 @@ a{
 	color: black;
 }*/
 
-.header .bottom .menu{
+.header .menu{
 	color: white;
 	float: right;
 	margin-right: 10%;
 	font-size: 19px;
 	margin-top: 2px;
+}
+
+.menu a{
+	border-right: 1px solid white;
+}
+.menu a:hover{
+	background-color: white;
+	color: black;
+}
+
+.menu a:last-child{
+	border-right: 0px solid white !important;
 }
 
  /* =============  baner picture ========== */
@@ -321,4 +334,8 @@ footer{
 
 .tc a:last-child{
 	border-right: 0px solid white !important;
+}
+.tc a:hover{
+	background-color: white;
+	color: black;
 }
