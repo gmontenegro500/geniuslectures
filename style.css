@@ -271,7 +271,7 @@ footer{
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	width: 100%;
+	
 }
 
 
@@ -281,7 +281,7 @@ footer{
 	border: 0px solid white;
 	padding-right: 18%;
 	/*margin-left: 40px;*/
-	margin-top: 40px;
+	/*margin-top: 40px;*/
 }
 
 .footer_menu li:last-child{
@@ -313,7 +313,43 @@ footer{
 	text-align: justify;
 }
 
-.questions{
+.contactUs{
+	margin-top: 10px;
+	color: white;
+	/*background-color: #86B827; */
+	border: 1px solid grey;
+	/*width: 216px;
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;*/
+	border-radius: 0px;
+	/*box-shadow: 10px 10px 5px #888888;*/
+	
+	/*gradient */
+	background: #86b827; /* Old browsers */
+	background: -moz-linear-gradient(top,  #86b827 0%, #457018 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#86b827), color-stop(100%,#457018)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #86b827 0%,#457018 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #86b827 0%,#457018 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #86b827 0%,#457018 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #86b827 0%,#457018 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86b827', endColorstr='#457018',GradientType=0 ); /* IE6-9 */
+}
+
+.contactUs:hover{
+	cursor: pointer;
+	border-radius: 0px;
+	
+	background: #457018; /* Old browsers */
+	background: -moz-linear-gradient(top,  #457018 0%, #86b827 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#457018), color-stop(100%,#86b827)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #457018 0%,#86b827 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #457018 0%,#86b827 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #457018 0%,#86b827 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #457018 0%,#86b827 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#457018', endColorstr='#86b827',GradientType=0 ); /* IE6-9 */
+}
+/*.questions{
 	width: 50px;
 	height: 40px;
 	border: 1px solid white;
@@ -321,7 +357,7 @@ footer{
 
 .questions ul li{
 	border: 1px solid white;
-}
+}*/
 
 /* ======= PRIVACY =========== */
 
