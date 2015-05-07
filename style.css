@@ -210,7 +210,7 @@ input[type="text"]{
 }
 .description{
 	text-align: justify;
-	padding-top: 40px;
+	padding-top: 0px;
 	width: 40%;
 	float: left;
 	border: 0px solid black;
@@ -218,7 +218,6 @@ input[type="text"]{
 
 .laptop{
 	width: 50%;
-	/*height: 250px;*/
 	border: 0px solid black;
 	float: right;
 	/*background-image: url("images/laptop.jpg");
@@ -230,6 +229,12 @@ input[type="text"]{
 .laptop > img{
 	float: right;
 }
+
+.laptop img{
+	width: 100%;
+	height: auto;
+}
+
 .second-block{
 	height: 300px;
 	padding: 40px 0;
@@ -245,9 +250,14 @@ input[type="text"]{
 	background-size: cover;*/
 }
 
+.graduate img{
+	width: 100%;
+	height: auto;
+}
+
 .description2{
 	text-align: justify;
-	padding-top: 40px;
+	padding-top: 0px;
 	width: 40%;
 	float: right;
 	border: 0px solid black;
@@ -271,7 +281,7 @@ footer{
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	
+	min-width: 1080px;
 }
 
 
@@ -279,7 +289,7 @@ footer{
 	float: left;	
 	font-size: 27px;
 	border: 0px solid white;
-	padding-right: 18%;
+	padding-right: 15%;
 	/*margin-left: 40px;*/
 	/*margin-top: 40px;*/
 }
@@ -398,4 +408,96 @@ footer{
 .tc a:hover{
 	background-color: white;
 	color: black;
+}
+
+/* ====== MEDIA QUERIES ====== */
+
+
+@media (max-width: 600px) {
+	
+	p{
+		min-width: 400px;
+		font-size: 17px !important; 
+	}
+	
+	.login {
+		height: 350px;
+		width: 250px;
+		background-color: white;
+		color: black;
+		margin-right: 25%;
+	}
+	
+	.description {
+		width: 100%;
+		clear: both;
+	}
+	
+	.first-block{
+		height: 530px;
+		padding: 0px 0;
+		border-bottom: 1px solid black;
+	}
+	
+	.laptop img{
+		width: 400px;
+		height: 200px;
+		margin-top: 20px;
+		margin-right: 25px;
+	}
+	
+	.graduate img{
+		width: 400px;
+		height: 200px;
+		margin-top: 20px;
+		margin-left: 25px;
+	}
+	
+	.description2{
+		width: 100%;
+		clear: both;
+		padding-top: 0px;
+	}
+	
+	.second-block{
+		height: 500px;
+	}
+	
+	.footer_menu ul ul{
+		display: none;
+	}
+	
+	.footer_menu ul li{
+		padding: 10px;
+		font-size: 20px;
+	}
+	
+	.footer_menu ul{
+		min-width: 500px;
+	}
+	
+	footer {
+		height: 100px;
+		min-width: 530px;
+	}
+	
+	.privacy{
+		height: 100px;
+		min-width: 530px;
+	}
+	
+	.tc{
+		margin-right: 17%;
+		
+	}
+	
+	.copy2015{
+		margin-left: 25%;
+	}
+}
+
+@media (max-width: 1100px) {
+	p{
+		font-size: 15px;
+	}
 }
