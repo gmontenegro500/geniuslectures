@@ -229,6 +229,8 @@ input[type="text"]{
 	border: 0px solid black;
 	float: right;
 	margin-top: 30px;
+	position: relative;
+	left: 0;
 
 	/*background-image: url("images/laptop.jpg");
 	background-repeat: no-repeat;
@@ -541,9 +543,7 @@ footer{
 		width: 250px;
 		background-color: white;
 		color: black;
-		margin-right: 35%;
-
-		
+		margin-right: 35%;	
 	}
 
 	.first-block{
@@ -555,8 +555,6 @@ footer{
 	.description {
 		width: 100%;
 		clear: both;
-
-		
 	}
 
 	.laptop{
@@ -596,12 +594,10 @@ footer{
 		text-align: center;
 	}	
 
-	.footer-block p{
+	.footer-block p, .footer-block ul, .tc{
 		display: none;
 	}
-	.footer-block ul{
-		display: none;
-	}
+	
 	.footer-block h2{
 		margin-top: 30px;
 	}
@@ -611,11 +607,6 @@ footer{
 		min-width: 530px;
 	}
 	
-	.tc{
-		display: none;
-		
-	}
-	
 	.copy2015{
 		margin-left: 30%;
 		margin-top: 20px;
@@ -623,3 +614,15 @@ footer{
 	
 }
 
+@media (min-width: 851px) and (max-width: 1000px){
+
+	.footer-block  p, .footer-block  li{
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 431px){
+	.content{
+		min-width: 434px;
+	}
+}
