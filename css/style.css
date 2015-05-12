@@ -212,13 +212,13 @@ input[type="text"]{
 /* ===== first block ===== */
 
 .first-block{
-	height: 325px;
+	height: 350px;
 	padding: 40px 0;
 	border-bottom: 1px solid black;
 }
 .description{
 	text-align: justify;
-	margin-top: 30px;
+	padding-top: 0px;
 	width: 40%;
 	float: left;
 	border: 0px solid black;
@@ -229,7 +229,6 @@ input[type="text"]{
 	border: 0px solid black;
 	float: right;
 	margin-top: 30px;
-
 	/*background-image: url("images/laptop.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;*/
@@ -239,19 +238,7 @@ input[type="text"]{
 .laptop img{
 	width: 100%;
 	height: auto;
-	position: relative;
 	/*width: auto;*/
-}
-.youtube-video{
-	clear: both;
-	margin-top: -230px;
-	margin-left: 49px;
-	position: absolute;
-	
-}
-iframe{
-	width : 304px;
-	height: 195px;
 }
 
 
@@ -358,11 +345,6 @@ footer{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#457018', endColorstr='#86b827',GradientType=0 ); /* IE6-9 */
 }
 
-.social li{
-	float: left;
-	margin-right: 20px;
-}
-
 /* ======= PRIVACY =========== */
 
 .privacy{
@@ -428,7 +410,7 @@ footer{
 		width: 250px;
 		background-color: white;
 		color: black;
-		margin-right: 20%;
+		margin-right: 25%;
 
 		
 	}
@@ -436,59 +418,44 @@ footer{
 	.description {
 		width: 100%;
 		clear: both;
-		margin: 40px 0;
+		margin-top: 20px;
 	}
 	
 	.first-block{
-		height: 550px;
-		padding: 1px 0 !important;
+		height: 500px;
+		padding: 0;
 		border-bottom: 1px solid black;
 	}
 
 	.laptop{
 		float: none;
-		/*margin-left: 10%;*/
+		margin-left: 10%;
 
 	}
 	
 	.laptop img{
 		width: auto;
 		height: 200px;
-		/*height: 200px;
 		margin-top: 20px;
-		margin-right: 25px;*/
-		/*margin-left: 10%;*/
+		margin-right: 25px;
 	}
 
-	.youtube-video{
-	clear: both;
-	margin-top: -189px;
-	margin-left: 41px;
-	position: absolute;
-	
-	}
-
-	iframe{
-	width : 252px;
-	height: 165px;
-	}
 
 	.graduate img{
 		width: auto;
 		height: 200px;
 		margin-top: 10px;
-
-		/*margin-left: 15%;*/
+		margin-left: 15%;
 	}
 	
 	.description2{
 		width: 100%;
 		clear: both;
-		
+		padding-top: 0px;
 	}
 	
 	.second-block{
-		height: 500px;
+		height: 450px;
 	}
 
 	.footer-block p{
@@ -497,21 +464,17 @@ footer{
 	.footer-block ul{
 		display: none;
 	}
-	.footer-block h2{
-		margin-top: 30px;
-	}
 
 	footer {
 		height: 100px;
-		min-width: 400px;
+		min-width: 530px;
 		font-size: 12px;
 		text-align: center;
-		margin-top: 20px;
 	}
 
 	.privacy{
 		height: 80px;
-		min-width: 400px;
+		min-width: 530px;
 	}
 	
 	.tc{
@@ -520,8 +483,8 @@ footer{
 	}
 	
 	.copy2015{
-		margin-left: 10%;
-		margin-top: 20px;
+		margin-left: 20%;
+		margin-top: 0;
 	}
 }
 
@@ -547,29 +510,27 @@ footer{
 	}
 
 	.first-block{
-		height: 500px;
-		/*padding: 0;*/
+		height: 460px;
+		padding: 0;
 		border-bottom: 1px solid black;
 	}
 	
 	.description {
 		width: 100%;
 		clear: both;
-
-		
+		margin-top: 20px;
 	}
 
 	.laptop{
 		float: none;
 		margin-left: 15%;
-		/*margin-left: 15%;*/
 	}
 	
 	.laptop img{
 		width: auto;
-		/*height: 200px;*/
+		height: 200px;
 		margin-top: 20px;
-		
+		margin-left: 10%;
 	}
 
 	.second-block{
@@ -578,15 +539,16 @@ footer{
 
 	.graduate img{
 		width: auto;
+		height: 200px;
 		margin-top: 10px;
-		margin-left: 20%;
+		margin-left: 40%;
 	}
 	
 	.description2{
 		width: 100%;
 		clear: both;
-		padding-top: 40px;
-		
+		padding-top: 0px;
+		height: 50px;
 	}
 
 	footer {
@@ -602,9 +564,6 @@ footer{
 	.footer-block ul{
 		display: none;
 	}
-	.footer-block h2{
-		margin-top: 30px;
-	}
 
 	.privacy{
 		height: 80px;
@@ -618,7 +577,7 @@ footer{
 	
 	.copy2015{
 		margin-left: 30%;
-		margin-top: 20px;
+		margin-top: 0;
 	}
 	
 }
