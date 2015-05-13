@@ -95,7 +95,7 @@
 				<img src="images/laptop.jpg" >
 			</div>
 			<div class="youtube-video">
-				<iframe src="https://www.youtube.com/embed/FK_wiPiVZV8?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				<iframe src="https://www.youtube.com/embed/sd0grLQ4voU?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 			</div>
 			
 
@@ -194,16 +194,18 @@ $('.laptop').click(function(){
 
 $( ".laptop" ).click(function() {
  
- $(this).addClass('animated shake infinite');
+  $(this).addClass('animated shake');
+
  
- /* $(this).animate({
-    opacity: 0.25,
-    left: "+=50",
-    height: "800px"
-  }, 5000, function() {
-    alert('hola ya se completo la animacion');
-  });*/
 });
+
+//   Make laptop appear from the left 
+$(document).ready(
+		function(){
+			$(".laptop").addClass("animated bounceInRight");
+		});
+
+
 
 $('.tc ul a li').click(function(){
 	$(this).hide();
