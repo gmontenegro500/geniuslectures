@@ -87,7 +87,7 @@ ul{
 
 .main{
 	height: 500px;
-	background-image: url("images/mainPicture.jpg");
+	background-image: url("../images/mainPicture.jpg");
 	background-repeat: no-repeat;
 	/*background-position: 0px -100px;*/
 	background-size: cover;
@@ -212,13 +212,13 @@ input[type="text"]{
 /* ===== first block ===== */
 
 .first-block{
-	height: 350px;
+	height: 325px;
 	padding: 40px 0;
 	border-bottom: 1px solid black;
 }
 .description{
 	text-align: justify;
-	padding-top: 0px;
+	margin-top: 30px;
 	width: 40%;
 	float: left;
 	border: 0px solid black;
@@ -229,6 +229,9 @@ input[type="text"]{
 	border: 0px solid black;
 	float: right;
 	margin-top: 30px;
+	position: relative;
+	left: 0;
+
 	/*background-image: url("images/laptop.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;*/
@@ -238,7 +241,19 @@ input[type="text"]{
 .laptop img{
 	width: 100%;
 	height: auto;
+	position: relative;
 	/*width: auto;*/
+}
+.youtube-video{
+	clear: both;
+	margin-top: -230px;
+	margin-left: 49px;
+	position: absolute;
+	
+}
+iframe{
+	width : 304px;
+	height: 195px;
 }
 
 
@@ -345,6 +360,11 @@ footer{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#457018', endColorstr='#86b827',GradientType=0 ); /* IE6-9 */
 }
 
+.social li{
+	float: left;
+	margin-right: 20px;
+}
+
 /* ======= PRIVACY =========== */
 
 .privacy{
@@ -410,7 +430,7 @@ footer{
 		width: 250px;
 		background-color: white;
 		color: black;
-		margin-right: 25%;
+		margin-right: 20%;
 
 		
 	}
@@ -418,44 +438,59 @@ footer{
 	.description {
 		width: 100%;
 		clear: both;
-		margin-top: 20px;
+		margin: 40px 0;
 	}
 	
 	.first-block{
-		height: 500px;
-		padding: 0;
+		height: 550px;
+		padding: 1px 0 !important;
 		border-bottom: 1px solid black;
 	}
 
 	.laptop{
 		float: none;
-		margin-left: 10%;
+		/*margin-left: 10%;*/
 
 	}
 	
 	.laptop img{
 		width: auto;
 		height: 200px;
+		/*height: 200px;
 		margin-top: 20px;
-		margin-right: 25px;
+		margin-right: 25px;*/
+		/*margin-left: 10%;*/
 	}
 
+	.youtube-video{
+	clear: both;
+	margin-top: -189px;
+	margin-left: 41px;
+	position: absolute;
+	
+	}
+
+	iframe{
+	width : 252px;
+	height: 165px;
+	}
 
 	.graduate img{
 		width: auto;
 		height: 200px;
 		margin-top: 10px;
-		margin-left: 15%;
+
+		/*margin-left: 15%;*/
 	}
 	
 	.description2{
 		width: 100%;
 		clear: both;
-		padding-top: 0px;
+		
 	}
 	
 	.second-block{
-		height: 450px;
+		height: 500px;
 	}
 
 	.footer-block p{
@@ -464,17 +499,21 @@ footer{
 	.footer-block ul{
 		display: none;
 	}
+	.footer-block h2{
+		margin-top: 30px;
+	}
 
 	footer {
 		height: 100px;
-		min-width: 530px;
+		min-width: 400px;
 		font-size: 12px;
 		text-align: center;
+		margin-top: 20px;
 	}
 
 	.privacy{
 		height: 80px;
-		min-width: 530px;
+		min-width: 400px;
 	}
 	
 	.tc{
@@ -483,8 +522,8 @@ footer{
 	}
 	
 	.copy2015{
-		margin-left: 20%;
-		margin-top: 0;
+		margin-left: 10%;
+		margin-top: 20px;
 	}
 }
 
@@ -504,33 +543,31 @@ footer{
 		width: 250px;
 		background-color: white;
 		color: black;
-		margin-right: 35%;
-
-		
+		margin-right: 35%;	
 	}
 
 	.first-block{
-		height: 460px;
-		padding: 0;
+		height: 500px;
+		/*padding: 0;*/
 		border-bottom: 1px solid black;
 	}
 	
 	.description {
 		width: 100%;
 		clear: both;
-		margin-top: 20px;
 	}
 
 	.laptop{
 		float: none;
 		margin-left: 15%;
+		/*margin-left: 15%;*/
 	}
 	
 	.laptop img{
 		width: auto;
-		height: 200px;
+		/*height: 200px;*/
 		margin-top: 20px;
-		margin-left: 10%;
+		
 	}
 
 	.second-block{
@@ -539,16 +576,15 @@ footer{
 
 	.graduate img{
 		width: auto;
-		height: 200px;
 		margin-top: 10px;
-		margin-left: 40%;
+		margin-left: 20%;
 	}
 	
 	.description2{
 		width: 100%;
 		clear: both;
-		padding-top: 0px;
-		height: 50px;
+		padding-top: 40px;
+		
 	}
 
 	footer {
@@ -558,11 +594,12 @@ footer{
 		text-align: center;
 	}	
 
-	.footer-block p{
+	.footer-block p, .footer-block ul, .tc{
 		display: none;
 	}
-	.footer-block ul{
-		display: none;
+	
+	.footer-block h2{
+		margin-top: 30px;
 	}
 
 	.privacy{
@@ -570,15 +607,22 @@ footer{
 		min-width: 530px;
 	}
 	
-	.tc{
-		display: none;
-		
-	}
-	
 	.copy2015{
 		margin-left: 30%;
-		margin-top: 0;
+		margin-top: 20px;
 	}
 	
 }
 
+@media (min-width: 851px) and (max-width: 1000px){
+
+	.footer-block  p, .footer-block  li{
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 431px){
+	.content{
+		min-width: 434px;
+	}
+}
