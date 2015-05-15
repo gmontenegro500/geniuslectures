@@ -85,23 +85,29 @@ ul{
 
  /* =============  baner picture ========== */
 
-.main{
+/*.main{
 	height: 500px;
 	background-image: url("../images/mainPicture.jpg");
 	background-repeat: no-repeat;
-	/*background-position: 0px -100px;*/
 	background-size: cover;
-}
-
+}*/
 
  /* =============  sing up box ========== */
+
+.main{
+	position: absolute;
+	margin-left: 70%;
+	margin-top: 5%;
+	z-index: 2;
+
+}
 
 .login{
 	height: 350px;
 	width: 250px;
 	background-color: white;
 	color: black;
-	float: right;
+	/*float: right;*/
 	margin-right: 10%;
 	margin-top: 5%;
 }
@@ -422,7 +428,10 @@ footer{
 	}
 	
 	.main{
-		height: 415px;
+	position: absolute;
+	margin-left: 20%;
+	margin-top: 5%;
+	z-index: 2;
 	}
 
 	.login {
@@ -430,8 +439,6 @@ footer{
 		width: 250px;
 		background-color: white;
 		color: black;
-		margin-right: 20%;
-
 		
 	}
 	
@@ -535,7 +542,10 @@ footer{
 	}
 	
 	.main{
-		height: 415px;
+	position: absolute;
+	margin-left: 35%;
+	margin-top: 5%;
+	z-index: 2;
 	}
 
 	.login {
@@ -543,7 +553,7 @@ footer{
 		width: 250px;
 		background-color: white;
 		color: black;
-		margin-right: 35%;	
+		/*margin-right: 35%;*/	
 	}
 
 	.first-block{
