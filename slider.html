@@ -10,18 +10,24 @@
 </head>
 
 <body>
-	<div class = "content">
+	<!--<div class = "content">
 		<div id="banner-fade">
 			<ul class="bjqs">
 				<li> <img src="images/mainPicture.jpg" title= "probando" > </li>
 				<li> <img src="images/class.jpg" > </li>
 			</ul>
 		</div>
+	</div> -->
+<div class = "wrapper">
+	<div class = "div1" >
+		<span>
+			<p>hola hola hola hola hola</p>
+		</span>
 	</div>
-
-<div style = "height: 400px; width: 400px; background-color: black; position: relative; z-index: 2; left: 20px;">
-</div>
-<div style = "height: 400px; width: 400px; background-color: lightgreen; position: relative; top: -100px; z-index: 1;">
+	<div class = "div2" >
+	</div>
+	<div class = "div3" >
+	</div>
 </div>
 </body>
 
@@ -32,6 +38,47 @@
 		padding: 0;
 		margin: 0;
 	}
+	
+	.wrapper{
+		width: 100%;
+	}
+	
+	.div1{
+		height: 400px;
+		width: 400px;
+		background-color: black;
+		float: left;
+		position: relative;
+		display: inline-block;
+		color: white;
+	}
+	
+	.div1 span{
+		text-align: center;
+		width: 100%;
+		display: block;
+		vertical-align: middle;
+		height: 100%;
+		position: relative;
+		top: 187px;
+	}
+	
+	.div2{
+		height: 400px;
+		width: 400px;
+		float: left;
+		background-color: lightgreen;
+		position: relative;
+		display: inline-block;
+	}
+	.div3{
+		height: 400px;
+		width: 400px;
+		background-color: lightblue;
+		position: relative;
+		display: inline-block;
+	}
+	
 </style>
 
 <script>
