@@ -58,30 +58,61 @@ ul{
 	transition: 1s all ease;
 }
 
-/*.site:hover > a{
-	color: black;
-}*/
+/* ======== MENU ========== */
 
-.header .menu{
+.menu{
 	color: white;
 	float: right;
-	margin-right: 10%;
+	margin-right: 6%;
 	font-size: 19px;
-	margin-top: 2px;
+	
+}
+.menu ul li{
+	float: left;
+	width: 150px;
+	text-align: center;
+	border-right: 1px solid white;
+	line-height: 30px;
 }
 
-.menu a{
-	border-right: 1px solid white;
-	padding: 0 10 0 10px;
-}
 .menu a:hover{
+	display: block;
 	background-color: white;
 	color: black;
+	display: block;
 }
 
-.menu a:last-child{
+.menu li:last-child{
 	border-right: 0px solid white !important;
 }
+
+/* ======== DROP-DOWN MENU ========== */
+
+
+.menu ul li ul{
+position: absolute;
+z-index: 2;
+
+}
+
+
+.menu ul li ul li{
+	text-align: left;
+	background-color: #cccccc;
+	display: none;
+	
+
+}
+.menu ul li ul li a{
+	display: block;
+	padding-left: 10px;
+	font-size: 14px;
+}
+
+.menu ul li:hover ul li{
+	display: block;
+}
+
 
  /* =============  baner picture ========== */
 
@@ -97,7 +128,7 @@ ul{
 .main{
 	position: absolute;
 	margin-left: 70%;
-	margin-top: 5%;
+	margin-top: 7%;
 	z-index: 2;
 
 }
@@ -221,6 +252,7 @@ input[type="text"]{
 	height: 325px;
 	padding: 40px 0;
 	border-bottom: 1px solid black;
+	/*max-width: 1100px;*/
 }
 .description{
 	text-align: justify;
@@ -273,6 +305,8 @@ iframe{
 .second-block{
 	height: 300px;
 	padding: 40px 0;
+	/*max-width: 50%;
+	float: center;*/
 }
 
 .graduate{
