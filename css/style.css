@@ -80,13 +80,17 @@ ul{
 	background-color: white;
 	color: black;
 	display: block;
-	transition: all 0.4s;
 }
 
 .menu a{
 	transition: all 0.4s;
 	display: block;
 	width: 100%;
+	/*  -webkit-transiton: opacity 0.2s;
+	  -moz-transition: opacity 0.2s;
+	  -ms-transition: opacity 0.2s;
+	  -o-transition: opacity 0.2s;
+	  -transition: opacity 0.2s;*/
 }
 
 .menu li:last-child{
@@ -107,6 +111,7 @@ ul{
 	width: auto;
 	float: none;
 	border: none;
+
 }
 
 .menu ul ul li a{
@@ -119,7 +124,9 @@ ul{
 }
 
 .menu li:hover ul li{
+	transition: all 0.4s;
 	display: block;
+
 }
 
 
@@ -259,14 +266,16 @@ input[type="text"]{
 
 .first-block{
 	height: 325px;
-	padding: 40px 0;
+	padding: 40px 20px;
 	border-bottom: 1px solid black;
-	/*max-width: 1100px;*/
+	max-width: 1045px;
+	margin-left: auto;
+	margin-right: auto;
 }
+
 .description{
 	text-align: justify;
-	margin-top: 30px;
-	width: 40%;
+	width: 50%;
 	float: left;
 	border: 0px solid black;
 }
@@ -275,7 +284,6 @@ input[type="text"]{
 
 	border: 0px solid black;
 	float: right;
-	margin-top: 30px;
 	position: relative;
 	left: 0;
 
@@ -313,9 +321,9 @@ iframe{
 
 .second-block{
 	height: 300px;
-	padding: 40px 0;
-	/*max-width: 50%;
-	float: center;*/
+	padding: 40px 20px;
+	max-width: 1045px;
+	margin: 0 auto;
 }
 
 .graduate{
@@ -337,7 +345,7 @@ iframe{
 .description2{
 	text-align: justify;
 	padding-top: 0px;
-	width: 40%;
+	width: 50%;
 	float: right;
 	border: 0px solid black;
 
@@ -351,12 +359,21 @@ footer{
 	color: white;
 }
 
+.footer-container{
+	max-width: 1045px;
+	margin: 0 auto;
+}
+
+.main-menu li a:hover{
+	color: #86B827;
+}
+
 .footer-container p{
 	width: 85%;
 
 
 }
-.footer-container a{
+.footer-block p a:hover{
 	color: #86B827;
 
 }
@@ -414,6 +431,20 @@ footer{
 	margin-right: 20px;
 }
 
+.social li:first-child a:hover{
+	color: #3b5998;
+}
+.social li:nth-child(2) a:hover{
+	color: #b31217;
+}
+.social li:nth-child(3) a:hover{
+	color: #d34836;
+}
+.social li:last-child a:hover{
+	color: #4E433C;
+}
+
+
 /* ======= PRIVACY =========== */
 
 .privacy{
@@ -429,7 +460,6 @@ footer{
 	color: white;
 	float:right;
 	position: relative;
-	top: 15px;
 }
 
 .tc ul{
@@ -437,6 +467,7 @@ footer{
 }
 
 .tc a{
+	line-height: 50px;
 	float: left;
 	border-right: 1px solid white;
 	padding-right: 10px;
@@ -470,6 +501,10 @@ footer{
 		font-size: 17px !important; 
 	}
 	
+	.site{
+		display: none;
+	}
+
 	.main{
 	position: absolute;
 	margin-left: 20%;
@@ -485,27 +520,28 @@ footer{
 		
 	}
 	
+	.first-block{
+		height: 450px;
+		border-bottom: 1px solid black;
+	}
+
 	.description {
 		width: 100%;
 		clear: both;
-		margin: 40px 0;
-	}
-	
-	.first-block{
-		height: 550px;
-		padding: 1px 0 !important;
-		border-bottom: 1px solid black;
 	}
 
 	.laptop{
 		float: none;
-		/*margin-left: 10%;*/
+		width: 60%;
+		margin: 0 auto;
+
 
 	}
 	
 	.laptop img{
 		width: auto;
 		height: 200px;
+		padding-top: 20px;
 		/*height: 200px;
 		margin-top: 20px;
 		margin-right: 25px;*/
@@ -524,13 +560,17 @@ footer{
 	width : 252px;
 	height: 165px;
 	}
+	.graduate{
+		width: 60%;
+		float: none;
+		margin: 0 auto;
+	}
 
 	.graduate img{
 		width: auto;
 		height: 200px;
-		margin-top: 10px;
 
-		/*margin-left: 15%;*/
+		
 	}
 	
 	.description2{
@@ -540,7 +580,7 @@ footer{
 	}
 	
 	.second-block{
-		height: 500px;
+		height: 450px;
 	}
 
 	.footer-block p{
@@ -577,7 +617,7 @@ footer{
 	}
 }
 
-@media (min-width: 601px) and (max-width: 850px){
+@media (min-width: 601px) and (max-width: 900px){
 
 	p{
 		min-width: 400px;
@@ -600,9 +640,9 @@ footer{
 	}
 
 	.first-block{
-		height: 500px;
-		/*padding: 0;*/
+		height: 400px;
 		border-bottom: 1px solid black;
+
 	}
 	
 	.description {
@@ -612,8 +652,8 @@ footer{
 
 	.laptop{
 		float: none;
-		margin-left: 15%;
-		/*margin-left: 15%;*/
+		width: 60%;
+		margin:0 auto;
 	}
 	
 	.laptop img{
@@ -623,20 +663,27 @@ footer{
 		
 	}
 
+	/*====== second block ============*/
+
 	.second-block{
-		height: 450px;
+		height: 400px;
+	}
+
+	.graduate{
+		width: 60%;
+		float: none;
+		margin: 0 auto;
 	}
 
 	.graduate img{
 		width: auto;
-		margin-top: 10px;
-		margin-left: 20%;
+		
 	}
 	
 	.description2{
 		width: 100%;
 		clear: both;
-		padding-top: 40px;
+		padding-top: 10px;
 		
 	}
 
