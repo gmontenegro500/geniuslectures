@@ -100,18 +100,17 @@ ul{
 /* ======== DROP-DOWN MENU ========== */
 
 
-.menu ul li ul{
+.menu ul ul{
 	position: absolute;
 	z-index: 3;
+	display: none;
 }
 
 .menu ul ul li{
 	text-align: left;
-	display: none;
 	width: auto;
 	float: none;
 	border: none;
-
 }
 
 .menu ul ul li a{
@@ -123,11 +122,15 @@ ul{
 	background-color: #cccccc;
 }
 
-.menu li:hover ul li{
+.menu li:hover > ul {
+
+}
+
+/*.menu li:hover ul li{
 	transition: all 0.4s;
 	display: block;
 
-}
+}*/
 
 
  /* =============  baner picture ========== */

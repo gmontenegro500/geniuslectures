@@ -37,7 +37,13 @@
 							<li><a href="#">College Algebra</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Support</a></li>
+					<li><a href="#">Support</a>
+						<ul>
+							<li><a href="#">Beginning Algebra</a></li>
+							<li><a href="#">Intermediate Algebra</a></li>
+							<li><a href="#">College Algebra</a></li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -210,19 +216,27 @@
 
 <script>
 
-	jQuery(document).ready(function($) {
-		$('#banner-fade').bjqs({
-			'height' : '500',
-			'width' : '100%',
-			'responsive' : true,
-			'animtype' : 'fade',
-			'showcontrols' : false,
-			'usecaptions' : false,
-			'nexttext' : 'next',
-			'prevtext' : 'prev',
-			'showmarkers': false,
-		});
+jQuery(document).ready(function($) {
+	$('#banner-fade').bjqs({
+		'height' : '500',
+		'width' : '100%',
+		'responsive' : true,
+		'animtype' : 'fade',
+		'showcontrols' : false,
+		'usecaptions' : false,
+		'nexttext' : 'next',
+		'prevtext' : 'prev',
+		'showmarkers': false,
 	});
+});
+	
+$('.menu ul li').hover(
+	function(){
+		$(this).children('ul').slideDown(2000);
+	}, function(){
+		$(this).children('ul').slideUp(2000);
+	}
+);
 
 /*
 
