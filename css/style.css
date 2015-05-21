@@ -144,6 +144,10 @@ ul{
 
  /* =============  sing up box ========== */
 
+.wrapper_login{
+	display: none;
+}
+ 
 .main{
 	position: absolute;
 	margin-left: 70%;
