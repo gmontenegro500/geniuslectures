@@ -67,12 +67,12 @@
 						<table>
 							<tr>
 								<td>
-									<input type="text" name="email" placeholder="Email">
+									<input class="tool-message" title="Please enter your email" type="text" name="email" placeholder="Email">
 								</td>					
 							</tr>
 							<tr>
 								<td>
-									<input type="text" name="password" placeholder="Password">
+									<input class="tool-message" title="Please enter your password" type="text" name="password" placeholder="Password">
 								</td>					
 							</tr>
 							<tr>
@@ -166,13 +166,14 @@
 		
 		<div class="laptop wow bounceInRight">
 			<div>
-				<img id = "toolaptop" title = "si le das click a la laptop, podr&aacute;s ver un video" src="images/laptop.jpg" >
+				<img src="images/laptop.jpg" >
 			</div>
 			<div class="youtube-video">
 				<iframe src="https://www.youtube.com/embed/sd0grLQ4voU?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 			</div>
-			
-
+			<div class="info" id="message-laptop">
+				si le das click a la laptop, <span>podr&aacute;s ver un video</span>
+			</div>
 		</div>
 
 	</div>
@@ -265,7 +266,17 @@
 // belongs to jquery ui
 
 //$( "#accordion" ).accordion();
-$( "#toolaptop" ).tooltip();
+$( ".tool-message" ).tooltip();
+
+// manual tooltip
+
+$(".laptop img").hover(
+	function(){
+		$(".info").show();
+	},
+	function(){
+		$(".info").hide();
+	});
 
 
 // login and sign up tab manually done
