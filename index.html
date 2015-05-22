@@ -56,7 +56,7 @@
 			<div class = "sign_up">
 				Sign Up
 			</div>
-			<div class = "login_text">
+			<div class = "login_text login_regular">
 				Log In
 			</div>
 			<div class = "form">
@@ -276,14 +276,33 @@ $(".laptop img").hover(
 	},
 	function(){
 		$(".info").hide();
-	});
+	}
+);
 
 
 // login and sign up tab manually done
 
-$('.login_text').click(function(){
-	$('.wrapper_sign_up').fadeOut(3000,'swing', function(){
-		$('.wrapper_login').fadeIn(3000);
+$('.login_text').click(function(){ // when clicking on login_text class, do this (function)
+	
+	$(this).removeClass( "login_regular" ).addClass( "login_selected" );  // remove class and add class later
+	
+//	$('.login_text').removeClass( "login_regular" );
+//	$('.login_text').addClass( "login_selected" );    same as previous command but extended
+	
+	$('.sign_up').removeClass( "login_selected" ).addClass( "login_regular" );   // remove class and add class later
+	
+	$('.wrapper_sign_up').fadeOut('fast','swing', function(){ // fading out sign up form 
+		$('.wrapper_login').fadeIn('fast');	// when completed previous fade out, fade in login form
+	});
+});
+
+$('.sign_up').click(function(){
+	
+	$(this).removeClass( "login_regular" ).addClass( "login_selected" );
+	$('.login_text').removeClass( "login_selected" ).addClass( "login_regular" );
+	
+	$('.wrapper_login').fadeOut('fast','swing', function(){
+		$('.wrapper_sign_up').fadeIn('fast');
 	});
 });
 

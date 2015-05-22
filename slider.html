@@ -42,6 +42,7 @@
 	.div1{
 		height: 400px;
 		width: 400px;
+		margin-left: 0px;
 		background-color: black;
 		float: left;
 		position: relative;
@@ -49,9 +50,52 @@
 		color: white;
 	}
 	
+	.div1_left{
+		margin-left: -500px;
+		transition: 3s all ease;
+	}
+	
+	.div1_right{
+		transition: 3s all ease;
+		margin-left: 500px;
+	}
+	
 </style>
 
 <script>
+
+
+$('.div1').click(function(){
+
+	/*if($(this).hasClass('div1_left')){
+		$(this).removeClass('div1_left').addClass('div1_right');
+	}else{
+		$(this).removeClass('div1_right').addClass('div1_left');
+	}*/
+	
+	
+	if($(this).hasClass('div1_left')){
+		$(this).removeClass('div1_left').addClass('div1_right');
+		console.debug('tiene left');
+		return 0;
+	}
+	
+	if($(this).hasClass('div1_right')){
+		$(this).removeClass('div1_right').addClass('div1_left');
+		console.debug('tiene right');
+	}else{
+		$(this).addClass('div1_left');
+	}
+	
+	
+	// escribir otra forma de realizar este ejercicio, pero ahora utilizando el operador ! (not)
+	// si NO tiene la clase left y la right entonces haz ..... 
+	
+	
+});
+
+
+
 	jQuery(document).ready(function($) {
 		$('#banner-fade').bjqs({
 			'height' : '500',

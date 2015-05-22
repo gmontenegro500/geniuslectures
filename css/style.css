@@ -183,11 +183,18 @@ ul{
 	float: right;
 	text-align: center;
 	padding-top: 15px;
-	background-color: #acacac;
 	font-size: 20px;
 }
 
-.login_text:hover{
+.login_selected{
+	background-color: white;
+}
+
+.login_regular{
+	background-color: #acacac;
+}
+
+.login_regular:hover{
 	background-color: #86B827;
 	cursor: pointer;
 }
