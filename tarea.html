@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/tareaStyle.css">
+</head>
+<body>
+	
+	<div class="prime-box">
+		<div class="contenido" id="wrap">
+			<p>Obtener una lista de numeros primos.</p>
+			<input class="etr" type="text" id="entrada" placeholder="Entre un numero">
+			<button class="boton" type="button" id='clicked-button'>Enter</button>
+		</div>
+		<div class="resultado" id="respuesta">
+			<p>
+			</P>
+		</div>	
+	</div>
+	<div class="second-box">
+		<div class="contenido" id="wrap-2">
+			<p>Calcule cuantos numeros primos existen</p>
+			<input class="etr" type="text" id="entrada-2" placeholder="Entre un numero">
+			<button class="boton" type="button" id='clicked-button-2'>Enter</button>
+		</div>
+		<div class="resultado" id="respuesta-2">
+			<p>
+			</P>
+		</div>
+	</div>
+
+	<div class="third-box">
+		<div class="contenido" id="wrap-3">
+			<p>Es la cantidad de numeros primos un numero primo?</p>
+			<input class="etr" type="text" id="entrada-3" placeholder="Entre un numero">
+			<button class="boton" type="button" id='clicked-button-3'>Enter</button>
+		</div>
+		<div class="resultado" id="respuesta-3">
+			<p>
+			</P>
+		</div>
+	</div>
+					
+</body>
+
+</html>
+
+<script>
+	$('#clicked-button').click(function () {
+	$('#wrap').removeClass('contenido').addClass('contenido-top');
+
+	var x = $('#entrada').val();
+	var i;
+	var lista = "";
+	
+	
+	for( i = 1; i <= x; i++){
+		
+		// a continuacion verificamos si i es primo
+		var j;
+		var cont = 0;
+		for(j = 1; j <= i; j++){
+			if(i % j == 0){
+				cont = cont + 1;
+			}
+		}
+		if(cont == 2){
+			lista = lista + i + ", ";
+		}	
+	} 
+	$('#respuesta').html(lista).show(1000);
+
+	});
+
+	// Calcule cuantos numeros primos existen
+
+	$('#clicked-button-2').click(function () {
+	$('#wrap-2').removeClass('contenido').addClass('contenido-top');
+
+	var x = $('#entrada-2').val();
+	var i;
+	var lista = 0;
+	
+	
+	for( i = 1; i <= x; i++){
+		
+		// a continuacion verificamos si i es primo
+		var j;
+		var cont = 0;
+		for(j = 1; j <= i; j++){
+			if(i % j == 0){
+				cont = cont + 1;
+			}
+		}
+		if(cont == 2){
+			lista = lista + 1;
+		}	
+	} 
+	$('#respuesta-2').html("Existen : " + lista +" numeros primos menores o iguales que su numero ---> " +x).show('fast');
+
+	});
+
+	// Es la cantidad de numeros primos un numero primo?
+
+		$('#clicked-button-3').click(function () {
+	$('#wrap-3').removeClass('contenido').addClass('contenido-top');
+
+	var x = $('#entrada-3').val();
+	var i;
+	var lista = 0;
+	
+	
+	for( i = 1; i <= x; i++){
+		
+		// a continuacion verificamos si i es primo
+		var j;
+		var cont = 0;
+		for(j = 1; j <= i; j++){
+			if(i % j == 0){
+				cont = cont + 1;
+			}
+		}
+		if(cont == 2){
+			lista = lista + 1;
+		}	
+	}
+	//final
+	
+	var k;
+	var cuenta = 0;
+
+	for(k=1; k <= lista; k++){
+		if(lista % k == 0){
+			cuenta = cuenta + 1;
+		}
+	}
+	if(cuenta == 2){
+
+	$('#respuesta-3').html("Existen : " + lista +" numeros primos menores o iguales que su numero ---> " +x+ "<p>El numero: "+lista+ " ES un numero primo<p>").show('fast');
+	} else{
+
+	$('#respuesta-3').html("Existen : " + lista +" numeros primos menores o iguales que su numero ---> " +x+ "<p>  El numero: "+lista+ " NO es un numero primo</p>").show('fast');
+	}
+
+	});
+
+</script>
