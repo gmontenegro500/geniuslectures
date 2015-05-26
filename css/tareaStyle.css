@@ -1,6 +1,7 @@
 .prime-box{
 		float: left;
 		display: inline-block;
+		height: auto;
 		height: 500px;
 		width: 400px;
 		background-color: lightyellow;
@@ -29,7 +30,8 @@
 	}
 	.resultado{
 		display: none;
-		height: 255px;
+		height: 300px;
+		overflow: scroll;
 		width: 348px;
 		margin: 0 auto;
 		padding: 20px 10px;
