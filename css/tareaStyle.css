@@ -77,3 +77,12 @@
 	background-color: brown;
 
 	}
+/*========sixth box ===========*/
+
+	.sixth-box{
+	float: left;
+	height: 500px;
+	width: 400px;
+	background-color: red;
+
+	}
