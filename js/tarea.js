@@ -146,16 +146,16 @@ $('#clicked-button-6').click(function(){
 		arreglo[i] = parseInt($('#entrada-6' + (i + 1)).val());
 	}
 	
-	for ( var i = 0; i< 4; i++){ 
-		for ( var j = i +1; j< 4; j++){
-			if(arreglo[i] > arreglo[j]){
+	for ( var i = 0; i< 4; i++){ // recorrer el arreglo completo i = 0
+		for ( var j = i +1; j< 4; j++){ // recorre el arreglo desde la posicion i+1 (i=0, j=1) // (i=0,j=2)//(i=0, j=3)//(i=1, j=2)
+			if(arreglo[i] < arreglo[j]){ // comparar si el arreglo[i] > arreglo [j] (i=0, j=1) // (i=0, j=2)
 				// no hacemos nada
-			}else{
-				aux = arreglo[i];
-				arreglo[i] = arreglo[j];
-				arreglo[j] = aux;
-			}
-		}		
+			}else{ // en caso de que no sea mayor
+				aux = arreglo[i]; // asignamos el valor de arreglo[i] a aux (i=0, j=1)// (i=0, j=2)
+				arreglo[i] = arreglo[j]; // arreglo[i] va a tomar el valor de arreglo[j]// (i=0, j=2)
+				arreglo[j] = aux; // arreglo[j] toma el valor del arreglo aux (i=0, j=1)//
+			}// termina el else 
+		}// termina el segundo for interno (i=0, j=0)		
 	}
 	
 	console.debug(arreglo);
@@ -163,6 +163,44 @@ $('#clicked-button-6').click(function(){
 	$('#respuesta-6').html("El arreglo ordenado es " + arreglo).show(1000);
 		
 });
+
+
+
+   4* | 1 | 2 | 8 //arreglo inicial
+ 
+   1* | 4 | 2 | 8 //resultado arreglo i=0 j=1
+
+   1* | 4 | 2 | 8 //resultado arreglo i=0 j=2
+
+   1 | 4* | 2 | 8 //resultado arreglo i=0 j=3
+
+ // segunda entrada (i=1, j=2)
+
+   1 | 4* | 2 | 8 //arreglo inicial
+ 
+   1 | 2* | 4 | 8 //resultado arreglo i=1 j=2
+
+   1 | 2* | 4 | 8 //resultado arreglo i=1 j=3
+
+ // tercera entrada (i=2, j=3)
+
+   1 | 2 | 4* | 8 //arreglo inicial
+
+ // cuarta entrada (i=3, j=4)
+
+   1 | 2 | 4 | 8* //arreglo inicial
+
+   var x= parseInt($('#entrada-7'));
+   var total = 1; 
+
+   // x=5
+
+   for(var i=0; i< x; i++){
+   
+   		total = total * x; //i=0--> total = 6 // i=1 ---> 8 // i=2 ---> 8
+
+   		x = x - 1;
+   }
 
 
 
