@@ -164,44 +164,32 @@ $('#clicked-button-6').click(function(){
 		
 });
 
+// =============== Numero Factorial ===========
 
+$('#clicked-button-7').click(function(){
+	$('#wrap-7').removeClass('contenido').addClass('contenido-top');
 
-   4* | 1 | 2 | 8 //arreglo inicial
- 
-   1* | 4 | 2 | 8 //resultado arreglo i=0 j=1
-
-   1* | 4 | 2 | 8 //resultado arreglo i=0 j=2
-
-   1 | 4* | 2 | 8 //resultado arreglo i=0 j=3
-
- // segunda entrada (i=1, j=2)
-
-   1 | 4* | 2 | 8 //arreglo inicial
- 
-   1 | 2* | 4 | 8 //resultado arreglo i=1 j=2
-
-   1 | 2* | 4 | 8 //resultado arreglo i=1 j=3
-
- // tercera entrada (i=2, j=3)
-
-   1 | 2 | 4* | 8 //arreglo inicial
-
- // cuarta entrada (i=3, j=4)
-
-   1 | 2 | 4 | 8* //arreglo inicial
-
-   var x= parseInt($('#entrada-7'));
+   var x = parseInt($('#entrada-7').val());
    var total = 1; 
+   var aux;
+   aux = x;
 
    // x=5
 
    for(var i=0; i< x; i++){
    
-   		total = total * x; //i=0--> total = 6 // i=1 ---> 8 // i=2 ---> 8
+   		total = total * aux; 
+   		aux = aux - 1;
 
-   		x = x - 1;
+   		//console.debug(total);
+   		console.debug('el total: '+total);
+   		console.debug('Entramos al for por: '+i);
+   		console.debug('este es el valor de aux: '+aux+'\n\n');
+
+   		
    }
-
+   $('#respuesta-7').html('El numero factorial es: '+total).show(1000);
+});
 
 
 

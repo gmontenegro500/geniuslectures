@@ -86,3 +86,13 @@
 	background-color: red;
 
 	}
+
+/*========seventh box ===========*/
+
+	.seventh-box{
+	float: left;
+	height: 500px;
+	width: 400px;
+	background-color: lightgreen;
+
+	}
