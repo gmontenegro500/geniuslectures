@@ -191,6 +191,92 @@ $('#clicked-button-7').click(function(){
    $('#respuesta-7').html('El numero factorial es: '+total).show(1000);
 });
 
+// =============== suma de numeros ===========
 
+function numero (x){
 
+	var x1 = x%10;
+	x = Math.floor(x/10);
+	var x2 = x%10;
+	x = Math.floor(x/10);
+	var x3 = x%10;
+	x = Math.floor(x/10);
 
+	console.debug(x1*1000+x2*100+x3*10+x);
+	
+}
+
+function comp(x, y){
+
+	if(x>y){
+		console.debug('El numero :'+x+ ' es mayor que el numero: '+y);
+	}
+	if(y>x){
+		console.debug('El numero :'+y+ ' es mayor que el numero: '+x);
+	}
+	if(y==x){
+		console.debug('El numero :'+x+ ' es igual que el numero: '+y);
+	}
+}
+
+// esta funcion solo funciona para numeros de 5 digitos
+function capicua(x){
+	var aux = 0;
+	var inpnum = x;
+	var dec = 10000;
+	var total = 0;
+
+	for(var i=0; i<5; i++){
+		
+		aux = (x%10) * dec;
+		total = total + aux;
+		x = Math.floor(x/10);
+		dec = Math.floor(dec/10);
+	}
+	
+	if (inpnum == total) {
+		return('SI es capicua!! Su numero es: '+inpnum+' y el inverso del numero es: '+total);
+	}else{
+		return('NO es capicua!! Su numero es: '+inpnum+' y el inverso del numero es: '+total);
+	}
+
+//function capicua(x){
+	// var x1 = x%10;
+	// x = Math.floor(x/10);
+	// var x2 = x%10;
+	// x = Math.floor(x/10);
+	// var x3 = x%10;
+	// x = Math.floor(x/10);
+	// var x4 = x%10;
+	// x = Math.floor(x/10);
+
+	// var cap = x1*10000+x2*1000+x3*100+x4*10+x;
+	// console.debug(cap);
+	//}
+
+}
+
+function reciduo(x){
+	var total = x%10;
+	console.debug(total);
+}
+
+function parim(x){
+
+	if(x%2==0){
+		return('Este numero es par');
+	}else{
+		return('Este numero es impar');
+	}
+}
+
+function cantidad(x){
+
+	var count = 1 ;
+
+	while(x>9){
+		count = count +1;
+		x = Math.floor(x/10);
+	}
+	return count;
+}
