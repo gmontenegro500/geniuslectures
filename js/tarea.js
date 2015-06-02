@@ -329,17 +329,192 @@ function fibo(x){
 	 	console.debug(x2+", "); //2, //3, //5,  //8
 	 }	
 }
+//============== arrego brutal ============
+
+function arreglo_brutal(x){
+
+	var a =[];
+	var i = 0;
+	var suma_total=0;
+	var media_t = 0;
+	var pares_t = 0;
+	var voltear_f = 0;
+
+	while(x>9){
+
+		a[i] = x%10;
+		x = Math.floor(x/10);
+		i++;
+	}
+	a[i] = x;
+	// console.debug(a);
+	suma_total = suma(a, i+1);
+	media_t = media(a, i+1);
+	pares_t = pares(a, i+1);
+	voltear_f = voltear(a, i+1);
+
+	console.debug('Su numero es: '+voltear_f);
+	console.debug('La suma es: '+suma_total);
+	console.debug('La media es: '+media_t);
+	console.debug('La cantidad de numeros pares son: '+pares_t)
+}
+
+function suma(a, i){
+
+	var suma_t = 0;
+
+	for(var j=0; j<i; j++){
+
+		suma_t = suma_t + a[j];
+	}
+
+	return suma_t;
+}
+
+function media(a, i){
+
+	var suma_t = 0;
+	var media_t = 0;
+
+	for(var j=0; j<i; j++){
+
+		suma_t = suma_t + a[j];
+	}
+	media_t = suma_t/i;
+	return media_t;
+}
+
+function pares(a,i){
+
+	var total =0;
+
+	for(var j = 0; j<i; j++){
+
+		if(a[j]%2 == 0){
+
+			total = total +1;
+		}
+	}
+
+	return total;
+}
+
+function voltear(a, i){
+
+	var aux = i-1;
+	var b = [];
+
+	for(var j =0; j<i; j++){
+		b[j] = a[aux];
+		aux--;
+	}
+	return b;
+}
+
+//============= Arreglos ordenados ==============
 
 
 
+function dos_en_uno(x,y){
+
+	var obtener_funcion_ao = arreglo_ordenado(x);
+	var arreglo_listo = obtener_funcion_ao[0];
+	var tamano_arreglo = obtener_funcion_ao[1];
+
+	var obtener_funcion_ao_2 = arreglo_ordenado(y);
+	var arreglo_listo_2 = obtener_funcion_ao_2[0];
+	var tamano_arreglo_2 = obtener_funcion_ao_2[1];
+
+	var arreglo_final = [];
 
 
+	 for(var i =0; i<=tamano_arreglo; i++){
 
+	 	arreglo_final[i] = arreglo_listo[i];
+	 }
+	
+	 for(var j=0; j<= tamano_arreglo_2; j++ ){
 
+	 	arreglo_final[i] = arreglo_listo_2[j];
+	 	i++;
 
+	 }
 
+	 return orden(arreglo_final, i);
+}
 
+function arreglo_ordenado(numero){
 
+	var arreglo_no_ordenado = [];
+	var arreglo_ordenado = [];
+	var posicion = 0;
+
+	while(numero>9){
+
+		arreglo_no_ordenado[posicion] = numero%10;
+		numero = Math.floor(numero/10);
+		posicion++;
+	}
+	arreglo_no_ordenado[posicion] = numero;
+	var aux = posicion;
+
+	for(var i =0; i<=aux; i++){
+
+		arreglo_ordenado[i] = arreglo_no_ordenado[posicion];
+		posicion--;
+
+	}
+	return[arreglo_ordenado, aux];
+	
+}
+
+function orden(arr, x){
+
+	var aux = 0;
+	
+
+	for(var i =0; i<x; i++){
+		for(var j =i+1; j<x; j++){
+			
+			if(arr[i]<arr[j]){
+			//do nothing
+
+			}else{
+
+				aux = arr[j];
+				arr[j] = arr[i];
+				arr[i] = aux;
+
+			}
+		}
+	}
+	return arr;
+
+}
+
+function eliminar_repetidos(arr){
+
+	var arreglo_unico = [];
+	var j=0;
+
+	//011
+
+	for(var i=0; i<arr.length; i++){
+
+		if(i==0){
+			arreglo_unico[j] = arr[i];
+			j++;
+		}else{
+
+			if(arr[i] != arr[i-1]){
+
+				arreglo_unico[j] = arr[i];
+				j++; 
+			}
+		}
+	}
+	console.debug(arreglo_unico);
+}
 
 
 
