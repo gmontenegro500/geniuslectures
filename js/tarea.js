@@ -516,5 +516,40 @@ function eliminar_repetidos(arr){
 	console.debug(arreglo_unico);
 }
 
+function caracteres(arr, letra){
+	
+	count = 0;
+	
+	for (var i = 0; i< arr.length; i++){
+	
+		if(arr[i] == letra){
+			count = count + 1;
+		}	
+	}
+	
+	if (count == 0){
+		return ('la letra no se encuentra en el arreglo');
+	}else{
+		return(' la letra ' + letra + ' se encuentra '+ count +' veces en el arrelo');
+	}
+	
+}
+
+
+function recorrido_horizontal (){
+
+	var A = [];
+	cont = 0;
+
+	for (var i = 0; i< 5; i++){
+		A[i] = [];
+		for (var j = 0; j< 5; j++){
+			A[i][j] = cont;
+			cont = cont +1;
+		}
+	}
+	
+	
+}
 
 
