@@ -79,7 +79,7 @@ $('#clicked-button-3').click(function () {
 
 });
 
-// ========== seciencia fibonacci =================
+// ========== secuncia fibonacci =================
 
 $('#clicked-button-4').click(function(){
 	$('#wrap-4').removeClass('contenido').addClass('contenido-top');
@@ -221,39 +221,22 @@ function comp(x, y){
 
 // esta funcion solo funciona para numeros de 5 digitos
 function capicua(x){
-	var aux = 0;
-	var inpnum = x;
-	var dec = 10000;
-	var total = 0;
 
-	for(var i=0; i<5; i++){
-		
-		aux = (x%10) * dec;
-		total = total + aux;
-		x = Math.floor(x/10);
-		dec = Math.floor(dec/10);
-	}
+	var impnum = x;
+	var numerof = 0;
 	
-	if (inpnum == total) {
-		return('SI es capicua!! Su numero es: '+inpnum+' y el inverso del numero es: '+total);
-	}else{
-		return('NO es capicua!! Su numero es: '+inpnum+' y el inverso del numero es: '+total);
+	while(x>9){
+
+		numerof = (numerof * 10) + (x%10);
+		x = Math.floor(x/10);
 	}
+	numerof = (numerof *10)+x;
 
-//function capicua(x){
-	// var x1 = x%10;
-	// x = Math.floor(x/10);
-	// var x2 = x%10;
-	// x = Math.floor(x/10);
-	// var x3 = x%10;
-	// x = Math.floor(x/10);
-	// var x4 = x%10;
-	// x = Math.floor(x/10);
-
-	// var cap = x1*10000+x2*1000+x3*100+x4*10+x;
-	// console.debug(cap);
-	//}
-
+	if(impnum == numerof){
+		return(numerof + ' Es un numero capicua');
+	}else{
+		return(numerof + ' No es un numero capicua');
+	}
 }
 
 function reciduo(x){
@@ -280,3 +263,83 @@ function cantidad(x){
 	}
 	return count;
 }
+// =============== clase may 29 ============
+
+function cambio(){
+
+	// for(var i=0; i<10; i++){
+	// 	console.debug('hola '+i);
+	// }
+	var i=0;
+	while(i<10){
+		console.debug('hola '+i);
+		i++;
+	}
+}
+function tabla(){
+
+	var resultado = 0;
+
+	for(var i = 1; i<=10; i++){
+
+		console.debug('\n\n');
+
+		for(var j =1; j<=10; j++){
+
+			resultado = i * j;
+			console.debug(i+' * '+j+' = '+resultado);
+		}
+	}
+
+}
+
+function domino(){
+
+
+	for(var i = 0; i<=6; i++){
+		console.debug('\n');
+		
+		for(var j =0; j<=6; j++){
+
+			console.debug(i+' - '+j);
+
+		}
+	}
+}
+
+// ============= fibonacci =============
+
+function fibo(x){
+
+	 var x1 = 1;
+	 var x2 = 1;
+	 var aux = 0;
+	 var count = x;
+	 var count2 = 3;
+	
+	 console.debug("1, ");
+	 console.debug("1, ");
+			
+	 while(count2 <= count){	//1 <= x 6(true) // 2<=6(true) // 3<=6(true) // 5<=6 (true) // 8<=6(false)--> final
+	 	aux = x2; // aux = 1 // aux = 2 // aux=3 // aux =5
+	 	x2 = x2 +x1; // x2= 2 // x2= 3 // x2=5 // x2=8
+	 	x1 = aux; // x1= 1 // x1=2 // x1=3 // x1 = 5
+	 	count2 = count2 +1;
+
+	 	console.debug(x2+", "); //2, //3, //5,  //8
+	 }	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
