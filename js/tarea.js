@@ -536,20 +536,163 @@ function caracteres(arr, letra){
 }
 
 
-function recorrido_horizontal (){
+function llenar_arreglo (){
 
 	var A = [];
 	cont = 0;
 
-	for (var i = 0; i< 5; i++){
+	for (var i = 0; i< 4; i++){
 		A[i] = [];
 		for (var j = 0; j< 5; j++){
 			A[i][j] = cont;
 			cont = cont +1;
+			//console.debug(A[i][j]);
 		}
 	}
 	
+	 return A;
 	
 }
+
+// ================= recorrido de array =====================
+
+function culebrita(){
+
+	var A =  [];
+ 	A = llenar_arreglo();
+ 
+ 	for(i = 0; i < 5; i++){
+  		if(i % 2 == 0){
+   			for(j = 0; j < 5; j++){
+    			console.debug(A[i][j]);
+   			}
+  	}else{
+   		for(j = 4; j >= 0; j--){
+    		console.debug(A[i][j]);
+   		}
+  	}
+ }
+
+
+	// var A = [];
+	// A = llenar_arreglo();
+	// var resultado = 0;
+	// var j =0;
+	// //console.debug(A);
+
+	// for(var i = 0; i<5; i++){
+	// 	for(j; j<5; j++){
+
+	// 		if(j= -1){
+	// 			break;
+	// 		}
+
+	// 		resultudo = A[i][j];
+	// 		resultudo++;
+	// 	}
+	// 	j = 4;
+	// }
+}
+
+function diagonal(){
+
+	var A =  [];
+ 	A = llenar_arreglo();
+
+ 	for(var i = 0; i<5; i++){
+ 		for(var j = 0; j<5; j++){
+ 			
+ 			if(i == j){
+
+ 				console.debug(A[i][j]);
+ 			}
+ 		}
+ 	}
+
+}
+
+function derecha_diagonal(){
+
+	var A = [];
+	A = llenar_arreglo();
+
+	for(var i = 0; i<5; i++){
+		for(var j = 0; j<5; j++){
+
+			if(i < j){
+				console.debug(A[i][j]);
+			}
+		}
+	}
+}
+
+function tetri(){
+
+	var A = [];
+	A = llenar_arreglo();
+
+	for(var i = 0; i<5; i++){
+		for(var j = 0; j<5; j++){
+
+			if(i>= 1 && i <= 3){
+				if(j != 2){
+					if(i != j){
+						if(i+j != 4){
+							console.debug(A[i][j]);
+						}
+					}
+				}
+			}	
+		}
+	}
+}
+
+function recorrido(){
+
+	var A = [];
+	A = llenar_arreglo();
+
+	var i =0;
+
+	for(var j =0; j<5; j++){
+
+		console.debug(A[i][j]);
+	}
+	j--;
+	for(var i=1; i<3; i++){
+
+		console.debug(A[i][j]);
+	}
+	for(j=4; j>-1; j--){
+		console.debug(A[i][j]);
+	}
+	j++;
+	 for(i=2; i>0; i--){
+	 	console.debug(A[i][j]);
+	 }
+	 i++;
+	 for(j=1; j<4; j++){
+
+	 	console.debug(A[i][j]);
+	 }
+	 i++;
+	 for(j=3; j>0; j--){
+
+	 	console.debug(A[i][j]);
+	 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
